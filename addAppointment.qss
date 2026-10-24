@@ -1,31 +1,218 @@
+/* Main Window & Header */
 QMainWindow {
     background-color: #FFFFFF;
 }
 
+#header_container {
+    background-color: #EEF3F9;
+    border-bottom: 1px solid #E0E7F0;
+    padding: 10px 18px;
+}
+
+#close_btn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A2E40;
+    background: transparent;
+    border: none;
+}
+
+#close_btn:hover {
+    color: #D9534F;
+}
+
+#header_title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D4862;
+    padding-left: 10px;
+}
+
+#header_confirm_btn {
+    background-color: #24629A;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 12px;
+    padding: 6px 24px;
+    border: none;
+}
+
+#header_confirm_btn:hover {
+    background-color: #1B4A75;
+}
+
+#header_confirm_btn:pressed {
+    background-color: #133454;
+}
+
+/* Step Bar Progress Indicator */
+#step_container {
+    padding: 15px 40px;
+    background: #FFFFFF;
+}
+
+.step-circle-active {
+    background-color: #4A82B8;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 15px;
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+.step-circle-inactive {
+    background-color: #9EAEC1;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 15px;
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+.step-label-active {
+    color: #2D4862;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.step-label-inactive {
+    color: #7A8B9E;
+    font-size: 11px;
+}
+
+#step_line {
+    background-color: #B2C3D6;
+    max-height: 2px;
+}
+
+/* Page Form Inputs */
 QLabel {
+    color: #2D4862;
     font-size: 12px;
+    font-weight: 600;
 }
 
-#header_layout {
-    background-color: #ebf1fa;
+.section-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1A2E40;
+    margin-top: 4px;
+    margin-bottom: 2px;
 }
 
-#back_btn {
-    background-color: transparent;
+QLineEdit {
+    border: 1px solid #B8C6D6;
+    border-radius: 14px;
+    padding: 6px 12px;
+    font-size: 12px;
+    background-color: #FFFFFF;
 }
 
-#header_text {
-    color: #3c5670;
-    font-size: 29px;
+QLineEdit:focus {
+    border: 1.5px solid #24629A;
+}
+
+QRadioButton, QCheckBox {
+    font-size: 12px;
+    color: #2D4862;
+    spacing: 6px;
+}
+
+/* Delivery Option Pill Buttons */
+.delivery-pill {
+    border: 1px solid #B8C6D6;
+    border-radius: 18px;
+    padding: 8px 12px;
+    background-color: #FFFFFF;
+    color: #52677B;
+    font-size: 11px;
+}
+
+.delivery-pill-selected {
+    border: 1.5px solid #24629A;
+    border-radius: 18px;
+    padding: 8px 12px;
+    background-color: #FFFFFF;
+    color: #24629A;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/* Page 2 Confirmation Payment Card */
+#payment_card {
+    border: 1px solid #C4D0DE;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+#payment_title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A2E40;
+}
+
+#card_divider {
+    background-color: #2D4862;
+    max-height: 1px;
+}
+
+#summary_text {
+    font-size: 13px;
+    color: #1A2E40;
+    line-height: 1.6;
+}
+
+/* Page 3 Success Screen */
+#success_msg {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D4862;
+}
+
+#success_check_outer {
+    background-color: #C8D8E8;
+    border-radius: 75px;
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+#success_check_inner {
+    background-color: #5383B8;
+    border-radius: 60px;
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    color: #FFFFFF;
+    font-size: 55px;
     font-weight: bold;
 }
 
-#confirm_btn {
-    background-color: #22588d;
+#proceed_btn {
+    background-color: #1F517F;
+    color: #FFFFFF;
     font-weight: bold;
-    font-size: 18px;
-    color: #FCFFF;
-    padding: 5px;
-    border-radius: 11px;
-    
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 10px 30px;
+    border: none;
+}
+
+#proceed_btn:hover {
+    background-color: #163B5D;
+}
+
+#thank_you_lbl {
+    font-size: 12px;
+    color: #52677B;
 }
